@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+  background-image: url('images/marvel6.jpg');
+
+  background-size: cover;
+	background-attachment: fixed;
+	background-color: grey;
+	background-repeat: no-repeat;
+
+}
+
+.title{
+    margin-top: 9rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #fff;
+    
+}
+
+#myInput{
+    width: 420px;
+    padding: 15px 25px;
+    /* border-radius: 25px; */
+    border: 1px solid #0A1F44;
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+    
+  }
+
+
+
+
+.search-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  #myInput:focus{
+    outline: none;
+  }
+
+
+  #search-results-container{
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    top: 100%;
+    /* left: 0;
+    right: 0; */
+    max-height: 400px;
+    overflow-y: scroll;
+    width: 420px;
+    
+    
+  }
+
+  #search-results-container div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff; 
+    border-bottom: 1px solid #d4d4d4; 
+  }
+  
+  .search-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+  }
+  
